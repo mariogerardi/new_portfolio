@@ -1,9 +1,58 @@
-.App-header {
-  min-height: 100vh;
+h1 {
+  margin: 0;
+  color: #101316;
+  font-size: 6vh;
+}
+
+h2 {
+  margin: 0;
+  color: #101316;
+}
+
+.header {
   display: flex;
+  align-items: center;
   flex-direction: column;
+  justify-content: center;
+}
+
+.profile {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(15px + 2vmin);
-  color: #101316;
+  background: linear-gradient(#fff, #ccc);
+}
+
+.portrait {
+  width: 40vh;
+  height: 40vh;
+  padding-bottom: 4vh;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 5vh;
+}
+
+.letter {
+  padding: 2vmin;
+  text-align: center;
+  background-color: #eee;
+}
+
+#start {
+  border-top-left-radius: 1vw;
+  border-bottom-left-radius: 1vw;
+}
+
+#end {
+  border-top-right-radius: 1vw;
+  border-bottom-right-radius: 1vw;
 }
