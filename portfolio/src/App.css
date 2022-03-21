@@ -1,7 +1,7 @@
 h1 {
   margin: 0;
   color: #101316;
-  font-size: 6vh;
+  font-size: 5vh;
 }
 
 h2 {
@@ -14,45 +14,60 @@ h2 {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  padding-bottom: 4vh;
+  background: linear-gradient(#fff, #888);
 }
 
 .profile {
   width: 100vw;
-  height: 50vh;
+  height: 45vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(#fff, #ccc);
 }
 
 .portrait {
   width: 40vh;
   height: 40vh;
-  padding-bottom: 4vh;
-  object-fit: cover;
   border-radius: 50%;
 }
+
+.portrait[spin='1'] {
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+};
 
 .titleContainer {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  bottom: 5vh;
 }
 
 .letter {
-  padding: 2vmin;
+  height: 8vh;
+  padding-left: 1vmin;
+  padding-right: 1vmin;
   text-align: center;
   background-color: #eee;
+  border: none;
+  cursor: pointer;
 }
 
 #start {
-  border-top-left-radius: 1vw;
-  border-bottom-left-radius: 1vw;
+  border-top-left-radius: 2vw;
+  border-bottom-left-radius: 2vw;
+  padding-left: 2.5vw;
 }
 
 #end {
-  border-top-right-radius: 1vw;
-  border-bottom-right-radius: 1vw;
+  border-top-right-radius: 2vw;
+  border-bottom-right-radius: 2vw;
+  padding-right: 2.5vw;
+}
+
+@keyframes spin {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
 }
