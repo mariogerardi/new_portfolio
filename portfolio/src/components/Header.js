@@ -2,19 +2,6 @@ import React, { useState } from 'react';
 import '../App.css';
 
 function Header() {
-
-    const [letter1, setLetter1] = useState("M")
-    const [letter2, setLetter2] = useState("a")
-    const [letter3, setLetter3] = useState("r")
-    const [letter4, setLetter4] = useState("i")
-    const [letter5, setLetter5] = useState("o")
-    const [letter6, setLetter6] = useState("G")
-    const [letter7, setLetter7] = useState("e")
-    const [letter8, setLetter8] = useState("r")
-    const [letter9, setLetter9] = useState("a")
-    const [letter10, setLetter10] = useState("r")
-    const [letter11, setLetter11] = useState("d")
-    const [letter12, setLetter12] = useState("i")
     
     const [toggle1, setToggle1] = useState(0)
     const [toggle2, setToggle2] = useState(0)
@@ -31,6 +18,8 @@ function Header() {
 
     const [spin, setSpin] = useState(0)
     const [wave, setWave] = useState(0)
+    const [migrate, setMigrate] = useState(0)
+    const [stretch, setStretch] = useState(0)
 
     function makeMeSpin() {
         if (spin === 0) {
@@ -52,6 +41,26 @@ function Header() {
         }
     }
 
+    function moveIt() {
+        if (migrate === 0) {
+            setMigrate(1)
+            setToggle3(1);
+        } else {
+            setMigrate(0);
+            setToggle3(0);
+        }
+    }
+
+    function timeToStretch() {
+        if (stretch === 0) {
+            setStretch(1)
+            setToggle4(1);
+        } else {
+            setStretch(0);
+            setToggle4(0);
+        }
+    }
+
     return (
         <div className="header">
             <div className="profile">
@@ -68,77 +77,81 @@ function Header() {
                     onClick={makeMeSpin}
                     toggle={toggle1}
                 >
-                    <h1>{letter1}</h1>
+                    <h1>M</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle2}
                     onClick={doTheWave}
                 >
-                    <h1>{letter2}</h1>
+                    <h1>a</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle3}
+                    onClick={moveIt}
                 >
-                    <h1>{letter3}</h1>
+                    <h1>r</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle4}
+                    onClick={timeToStretch}
                 >
-                    <h1>{letter4}</h1>
+                    <h1>i</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle5}
                 >
-                    <h1>{letter5}</h1>
+                    <h1>o</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle6}
                 >
-                    <h1>{letter6}</h1>
+                    <h1>G</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle7}
                 >
-                    <h1>{letter7}</h1>
+                    <h1>e</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle8}
                 >
-                    <h1>{letter8}</h1>
+                    <h1>r</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle9}
                 >
-                    <h1>{letter9}</h1>
+                    <h1>a</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle10}
                 >
-                    <h1>{letter10}</h1>
+                    <h1>r</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle11}
                 >
-                    <h1>{letter11}</h1>
+                    <h1>d</h1>
                 </button>
                 <button 
                     className="letter" 
                     id="end"
                     toggle={toggle12}
                 >
-                    <h1>{letter12}</h1>
+                    <h1>i</h1>
                 </button>
             </div>
+            <h2 className="migrate" migrate={migrate}>Front-End Developer | Filmmaker</h2>
+            <h3 className="stretch" stretch={stretch}>Nice to meet you.</h3>
         </div>
     );
 }

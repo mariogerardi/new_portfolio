@@ -1,12 +1,26 @@
+body {
+  background-color: #111;
+}
+
 h1 {
   margin: 0;
-  color: #101316;
-  font-size: 5vh;
+  color: #eee;
+  font-size: 6vh;
+  font-weight: 400;
 }
 
 h2 {
-  margin: 0;
-  color: #101316;
+  margin-top: 2vh;
+  color: #eee;
+  font-size: 3.5vh;
+  font-weight: 300;
+}
+
+h3 {
+  margin-top: -2vh;
+  color: #eee;
+  font-size: 3vh;
+  font-weight: 200;
 }
 
 .header {
@@ -14,8 +28,7 @@ h2 {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 4vh;
-  background: linear-gradient(#fff, #888);
+  background: linear-gradient(#ccc, #111);
 }
 
 .profile {
@@ -43,6 +56,8 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-style: solid;
+  border-width: 10vh;
 }
 
 .titleContainer[wave='1'] {
@@ -53,17 +68,31 @@ h2 {
 }
 
 .letter {
-  height: 8vh;
-  padding-left: 1.5vmin;
-  padding-right: 1.5vmin;
+  height: 10vh;
+  padding-left: 1vmin;
+  padding-right: 1vmin;
   text-align: center;
-  background-color: #eee;
+  background-color: #1969E9;
   border: none;
   cursor: pointer;
 }
 
 .letter[toggle='1'] {
-  background-color: #ccc;
+  background-color: #FFC107;
+}
+
+.migrate[migrate='1'] {
+  animation-name: migrate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.stretch[stretch='1'] {
+  animation-name: stretch;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 #start {
@@ -91,4 +120,19 @@ h2 {
   60% {transform: rotateZ(2deg);}
   70% {transform: rotateZ(-1deg);}
   85%, 100% {transform: rotateZ(0);}
+}
+
+@keyframes migrate {
+  0%, 100% {transform: translateX(0%);}
+  25% {transform: translateX(5%);}
+  75% {transform: translateX(-5%);}
+}
+
+@keyframes stretch {
+  0%, 100% {transform: scaleX(100%);}
+  75% {transform: scaleX(250%);}
+  80% {transform: scaleX(45%);}
+  85% {transform: scaleX(120%);}
+  90% {transform: scaleX(95%);}
+  95% {transform: scaleX(105%);}
 }
