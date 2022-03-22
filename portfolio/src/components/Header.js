@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import pdf from '../assets/gerardiresume.pdf'
 import '../App.css';
 
 function Header() {
@@ -152,6 +153,7 @@ function Header() {
             </div>
             <h2 className="migrate" migrate={migrate}>Front-End Developer | Filmmaker</h2>
             <h3 className="stretch" stretch={stretch}>Nice to meet you.</h3>
+            <a className="resume" href={pdf}>Résumé</a>
         </div>
     );
 }
