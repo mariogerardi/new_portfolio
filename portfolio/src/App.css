@@ -24,12 +24,19 @@ h3 {
   font-weight: 200;
 }
 
+h4 {
+  margin-bottom: -1vh;
+}
+
+.background {
+  background: radial-gradient(circle closest-corner at 50% 25%, #aaa, #101316);
+}
+
 .header {
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: linear-gradient(#ccc, #111);
 }
 
 .profile {
@@ -41,8 +48,10 @@ h3 {
 }
 
 .portrait {
-  width: 40vh;
-  height: 40vh;
+  position: absolute;
+  top: 2vh;
+  width: 45vh;
+  height: 45vh;
   border-radius: 50%;
 }
 
@@ -52,14 +61,6 @@ h3 {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 };
-
-.titleContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-style: solid;
-  border-width: 10vh;
-}
 
 .titleContainer[wave='1'] {
   animation-name: wave;
@@ -98,14 +99,14 @@ h3 {
 }
 
 #start {
-  border-top-left-radius: 1.25vh;
-  border-bottom-left-radius: 1.25vh;
+  border-top-left-radius: 1vh;
+  border-bottom-left-radius: 1vh;
   padding-left: 1vw;
 }
 
 #end {
-  border-top-right-radius: 1.25vh;
-  border-bottom-right-radius: 1.25vh;
+  border-top-right-radius: 1vh;
+  border-bottom-right-radius: 1vh;
   padding-right: 1vw;
 }
 
@@ -119,6 +120,29 @@ h3 {
   position: fixed;
   bottom: 2vh;
   left: 2vh;
+}
+
+.projectCarousel {
+  overflow: hidden;
+}
+
+.tipsi {
+  height: 60vmin;
+}
+
+.title {
+  margin-left: 5vw;
+  margin-right: 5vh;
+}
+
+.sectionDivider {
+  width: 90vw;
+}
+
+.body {
+  margin-left: 5vw;
+  margin-right: 5vh;
+  color: #eee;
 }
 
 @keyframes spin {

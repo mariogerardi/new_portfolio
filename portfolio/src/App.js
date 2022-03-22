@@ -1,10 +1,16 @@
 import React from 'react';
 import './App.css';
 import Header from './components/Header';
+import ProjectCarousel from './components/ProjectCarousel';
+import About from './components/About';
 
 function Hello() {
   return (
-    <Header />
+    <div className='background'>
+      <Header />
+      <ProjectCarousel />
+      <About />
+    </div>
   );
 }
 
