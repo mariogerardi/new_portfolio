@@ -5,7 +5,7 @@ function About() {
 
 
     return (
-        <div>
+        <div className="section">
             <h1 className="title">About</h1>
             <hr className="sectionDivider"/>
             <div className="body">

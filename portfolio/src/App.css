@@ -29,7 +29,7 @@ h4 {
 }
 
 .background {
-  background: radial-gradient(circle closest-corner at 50% 25%, #aaa, #101316);
+  background: radial-gradient(circle closest-corner at 50% 15%, #aaa, #101316);
 }
 
 .header {
@@ -45,11 +45,10 @@ h4 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 2vh;
 }
 
 .portrait {
-  position: absolute;
-  top: 2vh;
   width: 45vh;
   height: 45vh;
   border-radius: 50%;
@@ -61,6 +60,10 @@ h4 {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 };
+
+.titleContainer {
+  border: none;
+}
 
 .titleContainer[wave='1'] {
   animation-name: wave;
@@ -75,13 +78,13 @@ h4 {
   padding-left: 1.25vmin;
   padding-right: 1.25vmin;
   text-align: center;
-  background-color: #1969E9;
+  background-color: #1949E9;
   border: none;
   cursor: pointer;
 }
 
 .letter[toggle='1'] {
-  background-color: #FFC107;
+  background-color: #FFB107;
 }
 
 .migrate[migrate='1'] {
@@ -120,29 +123,83 @@ h4 {
   position: fixed;
   bottom: 2vh;
   left: 2vh;
+  z-index: 5;
 }
 
-.projectCarousel {
-  overflow: hidden;
-}
-
-.tipsi {
-  height: 60vmin;
+.section {
+  margin-bottom: 5vh;;
 }
 
 .title {
-  margin-left: 5vw;
-  margin-right: 5vh;
+  margin-left: 2.5vw;
 }
 
 .sectionDivider {
-  width: 90vw;
+  width: 95vw;
+}
+
+.tipsi {
+  width: 100vw;
+}
+
+.tipsiLogo {
+  width: 20vh;
+  margin: 3vh;
+}
+
+.fumblrleft {
+  margin-left: 3.5vw;
+  margin-right: 1.5vw;
+  width: 45vw;
+  border-radius: .5vh;;
+}
+
+.fumblrright {
+  margin-left: 1.5vw;
+  margin-right: 3.5vw;
+  width: 45vw;
+  border-radius: .5vh;;
 }
 
 .body {
-  margin-left: 5vw;
-  margin-right: 5vh;
+  margin-left: 2.5vw;
+  margin-right: 2.5vh;
   color: #eee;
+}
+
+.description {
+  color: white;
+  font-size: 2vh;
+  line-height: 1.2;
+  margin-left: 3.5vw;
+  margin-right: 3.5vw;
+}
+
+.gradient {
+  display: flex;
+  justify-content: center;
+}
+
+.techIcons {
+  margin-left: 3vw;
+  margin-right: 3vw;
+  display: flex;
+  width: 94vw;
+  overflow: auto
+}
+
+.techIcon {
+  margin: 1vh;
+  filter: brightness(0%) invert(100%);
+  font-size: 1.75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  height: 8vh;
 }
 
 @keyframes spin {
