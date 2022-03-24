@@ -3,109 +3,186 @@ import '../App.css';
 
 function Projects() {
     return (
-        <div 
+        <div
             className="section">
             <h1 className="title">Projects</h1>
-            <hr className="sectionDivider"/>
+            <hr className="sectionDivider" />
             <a>
-                <div className="gradient">
-                    <img className="tipsiLogo"
-                        src={require('../assets/icon.png')}
-                    />
+                <div className='infobox'>
+                    <div className="gradient">
+                        <img className="tipsiLogo"
+                            src={require('../assets/icon.png')}
+                        />
+                    </div>
                 </div>
-                <img 
+                <img
                     className="tipsi"
                     src={require('../assets/tipsi.png')}
                 />
-            {/*             
-                
-            <img class="techIcon" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-html-5-512.png" alt="">
-
-            <img class="techIcon" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/badge-css-3-512.png" alt="">
-
-            <img class="techIcon" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/187_Js_logo_logos-512.png" alt="">
-
-            <img class="techIcon" src="https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/jquery-512.png" alt="">
-
-            <img class="techIcon" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png" alt="">
-
-            <img class="techIcon" src="https://verbose-equals-true.gitlab.io/django-postgres-vue-gitlab-ecs/django.jpg" alt="">
-
-            <img class="techIcon" src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_a0b9e371c09d15b9a0b48ed84b31ed35/mongodb-atlas.png" alt="">
-
-            <img class="techIcon" src="https://www.postgresql.org/media/img/about/press/elephant.png" alt="">
-
-            REACT: <img class="techIcon" src="https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react_color-512.png" alt="">
-
-            <img class="techIcon" src="https://cdn3.iconfinder.com/data/icons/font-awesome-brands/576/bootstrap-512.png" alt="">
-
-            <img class="techIcon" src="https://tsed.io/mongoose.png" alt="">
-
-            <img class="techIcon" src="https://reliutg.gallerycdn.vsassets.io/extensions/reliutg/bulma-css-class-completion/0.3.0/1637870206716/Microsoft.VisualStudio.Services.Icons.Default" alt="">
-
-            <img class="techIcon" src="https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png" alt="">
-
-            <img class="techIcon" src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/137-Creativecloud_creative_cloud_CC_adobe-512.png" alt="">
-
-            <img class="techIcon" src="https://www.sohamkamani.com/static/65137ed3c844d05124dcfdab28263c21/38cea/express-routing-logo.png" alt="">
-
-            <img class="techIcon" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-512.png" alt="">
-
-            <img class="techIcon" src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/netlify-512.png" alt="">
-
-            <img class="techIcon" src="https://cdn2.iconfinder.com/data/icons/boxicons-logos/24/bxl-heroku-512.png" alt="">
-
-            <img class="techIcon" src="https://www.finaldraft.com/wp-content/uploads/2021/08/final-draft-12-logo.png" alt="">
-            
-            */}
                 <div className="techIcons">
                     <div class="techIcon">
-                        <img className="icon" src="https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react_color-512.png" alt=""/>
+                        <img className="icon" src="https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react_color-512.png" alt="" />
                         <p>React</p>
-                    </div> 
+                    </div>
                     <div class="techIcon">
-                    <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2653673-2202669.png" alt=""/>
+                        <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2653673-2202669.png" alt="" />
                         <p>JavaScript</p>
-                    </div> 
+                    </div>
                     <div class="techIcon">
-                        <img class="icon" src="https://www.sohamkamani.com/static/65137ed3c844d05124dcfdab28263c21/38cea/express-routing-logo.png" alt=""/>
+                        <img class="icon" src="https://www.sohamkamani.com/static/65137ed3c844d05124dcfdab28263c21/38cea/express-routing-logo.png" alt="" />
                         <p>Express</p>
-                    </div> 
+                    </div>
                     <div class="techIcon">
-                        <img class="icon" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-512.png" alt=""/>
+                        <img class="icon" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-512.png" alt="" />
                         <p>Node.js</p>
-                    </div> 
+                    </div>
                     <div class="techIcon">
-                        <img class="icon" src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_a0b9e371c09d15b9a0b48ed84b31ed35/mongodb-atlas.png" alt=""/>
+                        <img class="icon" src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_a0b9e371c09d15b9a0b48ed84b31ed35/mongodb-atlas.png" alt="" />
                         <p>MongoDB</p>
-                    </div> 
+                    </div>
                     <div class="techIcon">
-                        <img class="icon" src="https://tsed.io/mongoose.png" alt=""/>
+                        <img class="icon" src="https://tsed.io/mongoose.png" alt="" />
                         <p>Mongoose</p>
-                    </div> 
+                    </div>
                 </div>
                 <div className="description">
                     <p>
-                    <em>tipsi</em> is a mobile iOS application that allows users to create accounts and browse a large selection of cocktails, sourced from TheCocktailDb. Users can find recipes for any cocktail in the database, as well as share cocktails to a platform of their choosing.<br/><br/>
-                    - Utilized MERN Stack (MongoDB, Express, React Native, Node) to build a mobile application compatible with iOS devices<br/><br/>
-                    - Created a search component that queries an external API and live renders all cocktails in the database matching the query<br/><br/>
-                    - Implemented a secure user authentication feature, using bcrypt to hash passwords on the backend server<br/><br/>
+                        <em>tipsi</em> is a mobile iOS application that allows users to create accounts and browse a large selection of cocktails, sourced from TheCocktailDb. Users can find recipes for any cocktail in the database, as well as share cocktails to a platform of their choosing.<br /><br />
+                        For this project, I chose to utilize the MERN Stack (MongoDB, Express, React Native, Node) to build a mobile application compatible with iOS devices.
+                        I created a search component that queries an external API and live renders all cocktails in the database matching the query, as well as implemented a secure user authentication feature, using bcrypt to hash passwords on the backend server.<br />
                     </p>
                 </div>
             </a>
+            <hr className="sectionDivider" />
             <div>
+                <div className="gradient">
+                    <img className="fumblrLogo"
+                        src={require('../assets/fumblrlogo.png')}
+                    />
+                </div>
                 <a>
-                    <img 
+                    <img
                         className="fumblrleft"
                         src={require('../assets/FumblrHome.png')}
                     />
                 </a>
                 <a>
-                    <img 
+                    <img
                         className="fumblrright"
                         src={require('../assets/FumblrDashboard.png')}
                     />
                 </a>
+                <div className="techIcons">
+                    <div class="techIcon">
+                        <img className="icon" src="https://logoeps.com/wp-content/uploads/2014/01/23735-html-5-logo-icon-vector-icon-vector-eps.png" alt="" />
+                        <p>HTML5</p>
+                    </div>
+                    <div class="techIcon">
+                        <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Devicon-css3-plain.svg/640px-Devicon-css3-plain.svg.png" alt="" />
+                        <p>CSS3</p>
+                    </div>
+                    <div class="techIcon">
+                        <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2653673-2202669.png" alt="" />
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="techIcon">
+                        <img class="icon" src="https://seeklogo.com/images/J/jquery-logo-CFE6ECE363-seeklogo.com.png" alt="" />
+                        <p>jQuery</p>
+                    </div>
+                    <div class="techIcon">
+                        <img class="icon" src="https://www.sohamkamani.com/static/65137ed3c844d05124dcfdab28263c21/38cea/express-routing-logo.png" alt="" />
+                        <p>Express</p>
+                    </div>
+                    <div class="techIcon">
+                        <img class="icon" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-512.png" alt="" />
+                        <p>Node.js</p>
+                    </div>
+                    <div class="techIcon">
+                        <img class="icon" src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_a0b9e371c09d15b9a0b48ed84b31ed35/mongodb-atlas.png" alt="" />
+                        <p>MongoDB</p>
+                    </div>
+                    <div class="techIcon">
+                        <img class="icon" src="https://tsed.io/mongoose.png" alt="" />
+                        <p>Mongoose</p>
+                    </div>
+                </div>
+                <div className="description">
+                    <p>
+                        <em>fumblr</em> is a RESTful MEN-stack
+                        application that reimagines the user interface of popular blog-hosting
+                        website tumblr, in an attempt to modernize the website's design while
+                        paying homage to the distinct traditional tumblr look. The site allows
+                        users to create an account and log into that account, as well as create
+                        blogs and post seven different types of posts to their blogs. Each of
+                        these features has full CRUD functionality.<br /><br />
+                        In working on <em>fumblr</em>, I collaborated with a team of developers.
+                        I oversaw the front-end portion of the project, including but not limited to CSS styling and EJS files.
+                        I chose to design the website exclusively with CSS, utilizing conditional logic to render styles and images throughout.
+                    </p>
+                </div>
+                <hr className="sectionDivider" />
+                <div>
+                    <div className="gradient">
+                        <h1 className='cheeseAppTitle'>Cheese App</h1>
+                        <img className="cheeseAppLogo"
+                            src='https://cdn.iconscout.com/icon/free/png-256/cheese-1616900-1371045.png'
+                        />
+                    </div>
+                    <a>
+                        <img
+                            className="fumblrleft"
+                            src={require('../assets/CheeseShow.png')}
+                        />
+                    </a>
+                    <a>
+                        <img
+                            className="fumblrright"
+                            src={require('../assets/CheeseApp.png')}
+                        />
+                    </a>
+                    <div className="techIcons">
+                        <div class="techIcon">
+                            <img className="icon" src="https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react_color-512.png" alt="" />
+                            <p>React</p>
+                        </div>
+                        <div class="techIcon">
+                            <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Devicon-css3-plain.svg/640px-Devicon-css3-plain.svg.png" alt="" />
+                            <p>CSS3</p>
+                        </div>
+                        <div class="techIcon">
+                            <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png" alt="" />
+                            <p>Sass</p>
+                        </div>
+                        <div class="techIcon">
+                            <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2653673-2202669.png" alt="" />
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="techIcon">
+                            <img class="icon" src="https://www.sohamkamani.com/static/65137ed3c844d05124dcfdab28263c21/38cea/express-routing-logo.png" alt="" />
+                            <p>Express</p>
+                        </div>
+                        <div class="techIcon">
+                            <img class="icon" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-512.png" alt="" />
+                            <p>Node.js</p>
+                        </div>
+                        <div class="techIcon">
+                            <img class="icon" src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_a0b9e371c09d15b9a0b48ed84b31ed35/mongodb-atlas.png" alt="" />
+                            <p>MongoDB</p>
+                        </div>
+                        <div class="techIcon">
+                            <img class="icon" src="https://tsed.io/mongoose.png" alt="" />
+                            <p>Mongoose</p>
+                        </div>
+                    </div>
+                    <div className="description">
+                        <p>
+                            <em>Cheese App</em> is the first MERN-stack project I've created. 
+                            In <em>Cheese App,</em> anyone can add their favorite cheese, along with a photo of the cheese and the
+                            cheese's country of origin, to a remote database I have set up, as well as update and delete existing
+                            cheeses. Server-side Cheese app is deployed on Heroku, while the front-end lives on Netlify.<br /><br />
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     )

@@ -20,11 +20,11 @@ function About() {
                     structure and rhythm are essential in design, but I won't hesitate to break from tradition in search 
                     of an elegant solution.
                 </p>
-                <h4>Want to know more about me as a <em>person?</em></h4>
+                <h4>Want to know more about me?</h4>
                 <p>I love video games and creating music. I am a Maine transplant, currently residing 
                     in the NYC area, missing the wilderness but loving the city life. I love coffee, hiking, and spending time with friends and family.
                 </p>
-                <h4><a href="#projects">Check out my projects,</a> or <a href="#contact">contact me!</a></h4>
+                <h4 className="aboutLinks"><a href="#projects">Check out my projects,</a> or <a href="#contact">contact me!</a></h4>
             </div>
         </div>
     )
