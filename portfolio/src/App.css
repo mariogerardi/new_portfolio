@@ -12,7 +12,7 @@ h1 {
 h2 {
   margin-top: 2vh;
   color: #eee;
-  font-size: 3.5vh;
+  font-size: 3.25vh;
   font-weight: 300;
 }
 
@@ -28,8 +28,12 @@ h4 {
   margin-bottom: -1vh;
 }
 
+h5 {
+  color: white;
+}
+
 .background {
-  background: radial-gradient(circle closest-corner at 50% 10%, #aaa, #101316);
+  background: radial-gradient(circle closest-corner at 50% 9%, #aaa, #101316);
 }
 
 .header {
@@ -126,6 +130,16 @@ h4 {
   z-index: 5;
 }
 
+.me {
+  width: 26vw;
+  height: 26vw;
+  object-fit: cover;
+  object-position: top;
+  margin: .5vh 3.5vw 2vh 2.5vw;
+  border-radius: 10px;
+  float: left;
+}
+
 .aboutLinks {
    color: "white";
    text-decoration: none;
@@ -133,7 +147,6 @@ h4 {
 
 .section {
   margin-bottom: 5vh;
-  text-align: justify;
 }
 
 .title {
@@ -230,6 +243,25 @@ h4 {
 
 .icon {
   height: 6.5vh;
+}
+
+.links {
+  display: flex;
+  margin-top: -3vh;
+}
+
+.contactLinkBox {
+  display: flex;
+  text-decoration: none;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 2vw;
+}
+
+.contactLink {
+  filter: invert(100%);
+  width: 8vh;
 }
 
 @keyframes spin {

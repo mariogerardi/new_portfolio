@@ -67,7 +67,7 @@ function Header() {
             <div className="profile">
                 <img 
                     className="portrait"
-                    src={require('../assets/portrait.png')}
+                    src={require('../assets/avatar.png')}
                     spin={spin}
                 />
             </div>
@@ -151,7 +151,7 @@ function Header() {
                     <h1>i</h1>
                 </button>
             </div>
-            <h2 className="migrate" migrate={migrate}>Front-End Developer | Filmmaker</h2>
+            <h2 className="migrate" migrate={migrate}><em>Front-End Developer | Filmmaker</em></h2>
             <h3 className="stretch" stretch={stretch}>Nice to meet you.</h3>
             <a className="resume" href={pdf} target="_blank">Résumé</a>
         </div>
