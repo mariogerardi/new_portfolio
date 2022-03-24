@@ -20,28 +20,28 @@ function Projects() {
                     src={require('../assets/tipsi.png')}
                 />
                 <div className="techIcons">
-                    <div class="techIcon">
+                    <div className="techIcon">
                         <img className="icon" src="https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react_color-512.png" alt="" />
                         <p>React</p>
                     </div>
-                    <div class="techIcon">
-                        <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2653673-2202669.png" alt="" />
+                    <div className="techIcon">
+                        <img className="icon" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2653673-2202669.png" alt="" />
                         <p>JavaScript</p>
                     </div>
-                    <div class="techIcon">
-                        <img class="icon" src="https://www.sohamkamani.com/static/65137ed3c844d05124dcfdab28263c21/38cea/express-routing-logo.png" alt="" />
+                    <div className="techIcon">
+                        <img className="icon" src="https://www.sohamkamani.com/static/65137ed3c844d05124dcfdab28263c21/38cea/express-routing-logo.png" alt="" />
                         <p>Express</p>
                     </div>
-                    <div class="techIcon">
-                        <img class="icon" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-512.png" alt="" />
+                    <div className="techIcon">
+                        <img className="icon" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-512.png" alt="" />
                         <p>Node.js</p>
                     </div>
-                    <div class="techIcon">
-                        <img class="icon" src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_a0b9e371c09d15b9a0b48ed84b31ed35/mongodb-atlas.png" alt="" />
+                    <div className="techIcon">
+                        <img className="icon" src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_a0b9e371c09d15b9a0b48ed84b31ed35/mongodb-atlas.png" alt="" />
                         <p>MongoDB</p>
                     </div>
-                    <div class="techIcon">
-                        <img class="icon" src="https://tsed.io/mongoose.png" alt="" />
+                    <div className="techIcon">
+                        <img className="icon" src="https://tsed.io/mongoose.png" alt="" />
                         <p>Mongoose</p>
                     </div>
                 </div>
@@ -73,36 +73,36 @@ function Projects() {
                     />
                 </a>
                 <div className="techIcons">
-                    <div class="techIcon">
+                    <div className="techIcon">
                         <img className="icon" src="https://logoeps.com/wp-content/uploads/2014/01/23735-html-5-logo-icon-vector-icon-vector-eps.png" alt="" />
                         <p>HTML5</p>
                     </div>
-                    <div class="techIcon">
+                    <div className="techIcon">
                         <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Devicon-css3-plain.svg/640px-Devicon-css3-plain.svg.png" alt="" />
                         <p>CSS3</p>
                     </div>
-                    <div class="techIcon">
-                        <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2653673-2202669.png" alt="" />
+                    <div className="techIcon">
+                        <img className="icon" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2653673-2202669.png" alt="" />
                         <p>JavaScript</p>
                     </div>
-                    <div class="techIcon">
-                        <img class="icon" src="https://seeklogo.com/images/J/jquery-logo-CFE6ECE363-seeklogo.com.png" alt="" />
+                    <div className="techIcon">
+                        <img className="icon" src="https://seeklogo.com/images/J/jquery-logo-CFE6ECE363-seeklogo.com.png" alt="" />
                         <p>jQuery</p>
                     </div>
-                    <div class="techIcon">
-                        <img class="icon" src="https://www.sohamkamani.com/static/65137ed3c844d05124dcfdab28263c21/38cea/express-routing-logo.png" alt="" />
+                    <div className="techIcon">
+                        <img className="icon" src="https://www.sohamkamani.com/static/65137ed3c844d05124dcfdab28263c21/38cea/express-routing-logo.png" alt="" />
                         <p>Express</p>
                     </div>
-                    <div class="techIcon">
-                        <img class="icon" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-512.png" alt="" />
+                    <div className="techIcon">
+                        <img className="icon" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-512.png" alt="" />
                         <p>Node.js</p>
                     </div>
-                    <div class="techIcon">
-                        <img class="icon" src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_a0b9e371c09d15b9a0b48ed84b31ed35/mongodb-atlas.png" alt="" />
+                    <div className="techIcon">
+                        <img className="icon" src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_a0b9e371c09d15b9a0b48ed84b31ed35/mongodb-atlas.png" alt="" />
                         <p>MongoDB</p>
                     </div>
-                    <div class="techIcon">
-                        <img class="icon" src="https://tsed.io/mongoose.png" alt="" />
+                    <div className="techIcon">
+                        <img className="icon" src="https://tsed.io/mongoose.png" alt="" />
                         <p>Mongoose</p>
                     </div>
                 </div>
@@ -141,36 +141,36 @@ function Projects() {
                         />
                     </a>
                     <div className="techIcons">
-                        <div class="techIcon">
+                        <div className="techIcon">
                             <img className="icon" src="https://cdn0.iconfinder.com/data/icons/logos-brands-in-colors/128/react_color-512.png" alt="" />
                             <p>React</p>
                         </div>
-                        <div class="techIcon">
+                        <div className="techIcon">
                             <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Devicon-css3-plain.svg/640px-Devicon-css3-plain.svg.png" alt="" />
                             <p>CSS3</p>
                         </div>
-                        <div class="techIcon">
-                            <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png" alt="" />
+                        <div className="techIcon">
+                            <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png" alt="" />
                             <p>Sass</p>
                         </div>
-                        <div class="techIcon">
-                            <img class="icon" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2653673-2202669.png" alt="" />
+                        <div className="techIcon">
+                            <img className="icon" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2653673-2202669.png" alt="" />
                             <p>JavaScript</p>
                         </div>
-                        <div class="techIcon">
-                            <img class="icon" src="https://www.sohamkamani.com/static/65137ed3c844d05124dcfdab28263c21/38cea/express-routing-logo.png" alt="" />
+                        <div className="techIcon">
+                            <img className="icon" src="https://www.sohamkamani.com/static/65137ed3c844d05124dcfdab28263c21/38cea/express-routing-logo.png" alt="" />
                             <p>Express</p>
                         </div>
-                        <div class="techIcon">
-                            <img class="icon" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-512.png" alt="" />
+                        <div className="techIcon">
+                            <img className="icon" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-512.png" alt="" />
                             <p>Node.js</p>
                         </div>
-                        <div class="techIcon">
-                            <img class="icon" src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_a0b9e371c09d15b9a0b48ed84b31ed35/mongodb-atlas.png" alt="" />
+                        <div className="techIcon">
+                            <img className="icon" src="https://images.g2crowd.com/uploads/product/image/large_detail/large_detail_a0b9e371c09d15b9a0b48ed84b31ed35/mongodb-atlas.png" alt="" />
                             <p>MongoDB</p>
                         </div>
-                        <div class="techIcon">
-                            <img class="icon" src="https://tsed.io/mongoose.png" alt="" />
+                        <div className="techIcon">
+                            <img className="icon" src="https://tsed.io/mongoose.png" alt="" />
                             <p>Mongoose</p>
                         </div>
                     </div>

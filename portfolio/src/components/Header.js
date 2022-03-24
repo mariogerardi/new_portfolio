@@ -21,6 +21,14 @@ function Header() {
     const [wave, setWave] = useState(0)
     const [migrate, setMigrate] = useState(0)
     const [stretch, setStretch] = useState(0)
+    const [flip, setFlip] = useState(0)
+    const [bounce, setBounce] = useState(0)
+    const [spiral, setSpiral] = useState(0)
+    const [orbit, setOrbit] = useState(0)
+    const [up, setUp] = useState(0)
+    const [down, setDown] = useState(0)
+    const [mirror, setMirror] = useState(0)
+    const [resume, setResume] = useState(0)
 
     function makeMeSpin() {
         if (spin === 0) {
@@ -62,6 +70,68 @@ function Header() {
         }
     }
 
+    function doAFlip() {
+        if (flip === 0) {
+            setFlip(1)
+            setToggle5(1);
+        } else {
+            setFlip(0);
+            setToggle5(0);
+        }
+    }
+
+    function bouncyBois() {
+        if (bounce === 0) {
+            setBounce(1)
+            setToggle6(1);
+        } else {
+            setBounce(0);
+            setToggle6(0);
+        }
+    }
+
+    function spiralLikeMe() {
+        if (spiral === 0) {
+            setSpiral(1)
+            setToggle7(1);
+        } else {
+            setSpiral(0);
+            setToggle7(0);
+        }
+    }
+
+    function shiftInRhythm() {
+        if (up === 0) {
+            setUp(1)
+            setDown(1)
+            setToggle8(1);
+        } else {
+            setUp(0);
+            setDown(0);
+            setToggle8(0);
+        }
+    }
+
+    function reverseReverse() {
+        if (mirror === 0) {
+            setMirror(1)
+            setToggle9(1);
+        } else {
+            setMirror(0);
+            setToggle9(0);
+        }
+    }
+
+    function hireMeIDareYou() {
+        if (resume === 0) {
+            setResume(1)
+            setToggle10(1);
+        } else {
+            setResume(0);
+            setToggle10(0);
+        }
+    }
+
     return (
         <div className="header">
             <div className="profile">
@@ -69,14 +139,18 @@ function Header() {
                     className="portrait"
                     src={require('../assets/avatar.png')}
                     spin={spin}
+                    flip={flip}
                 />
             </div>
-            <div className="titleContainer" wave={wave}>
+            <div 
+                className="titleContainer" 
+                wave={wave}>
                 <button 
                     className="letter" 
                     id="start" 
                     onClick={makeMeSpin}
                     toggle={toggle1}
+                    down={down}
                 >
                     <h1>M</h1>
                 </button>
@@ -84,13 +158,15 @@ function Header() {
                     className="letter"
                     toggle={toggle2}
                     onClick={doTheWave}
+                    up={up}
                 >
-                    <h1>a</h1>
+                    <h1 spiral={spiral}>a</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle3}
                     onClick={moveIt}
+                    flip={flip}
                 >
                     <h1>r</h1>
                 </button>
@@ -98,48 +174,64 @@ function Header() {
                     className="letter"
                     toggle={toggle4}
                     onClick={timeToStretch}
+                    down={down}
+                    mirror={mirror}
                 >
-                    <h1>i</h1>
+                    <h1 bounce={bounce}>i</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle5}
+                    onClick={doAFlip}
+                    up={up}
                 >
-                    <h1>o</h1>
+                    <h1 spiral={spiral}>o</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle6}
+                    onClick={bouncyBois}
+                    flip={flip}
                 >
                     <h1>G</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle7}
+                    onClick={spiralLikeMe}
+                    down={down}
                 >
-                    <h1>e</h1>
+                    <h1 spiral={spiral}>e</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle8}
+                    onClick={shiftInRhythm}
+                    up={up}
                 >
                     <h1>r</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle9}
+                    onClick={reverseReverse}
+                    mirror={mirror}
                 >
-                    <h1>a</h1>
+                    <h1 spiral={spiral}>a</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle10}
+                    up={up}
+                    mirror={mirror}
+                    onClick={hireMeIDareYou}
                 >
                     <h1>r</h1>
                 </button>
                 <button 
                     className="letter"
                     toggle={toggle11}
+                    down={down}
                 >
                     <h1>d</h1>
                 </button>
@@ -148,12 +240,12 @@ function Header() {
                     id="end"
                     toggle={toggle12}
                 >
-                    <h1>i</h1>
+                    <h1 bounce={bounce}>i</h1>
                 </button>
             </div>
             <h2 className="migrate" migrate={migrate}><em>Front-End Developer | Filmmaker</em></h2>
             <h3 className="stretch" stretch={stretch}>Nice to meet you.</h3>
-            <a className="resume" href={pdf} target="_blank">Résumé</a>
+            <a className="resume" href={pdf} target="_blank" resume={resume}>Résumé</a>
         </div>
     );
 }

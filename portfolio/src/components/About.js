@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../App.css';
 
 function About() {
-
-
     return (
         <div className="section">
             <h1 className="title">About</h1>
