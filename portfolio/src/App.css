@@ -123,6 +123,20 @@ h1[spiral='1'] {
   animation-timing-function: ease-in;
 }
 
+h1[superflip='1'] {
+  animation-name: superflip;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+h1[finale='1'] {
+  animation-name: finale;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+};
+
 .letter[up='1'] {
   animation-name: up;
   animation-duration: 3s;
@@ -143,6 +157,13 @@ h1[spiral='1'] {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
+
+.letter[finale='1'] {
+  animation-name: finale;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+};
 
 #start {
   border-top-left-radius: 1vh;
@@ -179,6 +200,10 @@ h1[spiral='1'] {
   z-index: 5;
 }
 
+.resume[count='12'] {
+  background-color: #FFB107;
+}
+
 .resume[resume='1'] {
   animation-name: resume;
   animation-duration: 15s;
@@ -186,6 +211,7 @@ h1[spiral='1'] {
   animation-timing-function: ease-in-out;
   transform-origin: bottom left;
 }
+
 
 .letter[flip='1'] {
   animation-name: flip;
@@ -389,4 +415,17 @@ h1[spiral='1'] {
 
 @keyframes resume {
   95% {transform: scale(300%);}
+}
+
+@keyframes superflip {
+  0%, 100% {transform: scaleY(100%);}
+  25% {transform: scaleY(-50%) scaleX(-50%);}
+  50% {transform: scaleY(50%) scaleX(50%);}
+  75% {transform: scaleY(-50%) scaleX(-50%);}
+}
+
+@keyframes finale {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
 }
