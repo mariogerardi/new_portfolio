@@ -52,6 +52,13 @@ function Projects() {
                         I created a search component that queries an external API and live renders all cocktails in the database matching the query, as well as implemented a secure user authentication feature, using bcrypt to hash passwords on the backend server.<br />
                     </p>
                 </div>
+                <div className="description">
+                    <h2>Check it out here: </h2>
+                    <a href="https://github.com/mariogerardi/tipsi" target="_blank">
+                        <img className="contactLink" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="" />
+                    </a>
+                    <br/><br/>
+                </div>
             </a>
             <hr className="sectionDivider" />
             <div>
@@ -120,6 +127,16 @@ function Projects() {
                         I chose to design the website exclusively with CSS, utilizing conditional logic to render styles and images throughout.
                     </p>
                 </div>
+                <div className="description">
+                    <h2>Check it out here: </h2>
+                    <a href="https://github.com/mariogerardi/fumblr" target="_blank">
+                        <img className="contactLink" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="" />
+                    </a>&emsp;
+                    <a href="https://secure-shelf-80229.herokuapp.com/fumblr" target="_blank">
+                        <img className="contactLink" src="https://cdn2.iconfinder.com/data/icons/boxicons-logos/24/bxl-heroku-512.png" alt="" />
+                    </a>
+                </div>
+                <br/>
                 <hr className="sectionDivider" />
                 <div>
                     <div className="gradient">
@@ -179,8 +196,17 @@ function Projects() {
                             <em>Cheese App</em> is the first MERN-stack project I've created. 
                             In <em>Cheese App,</em> anyone can add their favorite cheese, along with a photo of the cheese and the
                             cheese's country of origin, to a remote database I have set up, as well as update and delete existing
-                            cheeses. Server-side Cheese app is deployed on Heroku, while the front-end lives on Netlify.<br /><br />
+                            cheeses. Server-side Cheese app is deployed on Heroku, while the front-end lives on Netlify.<br />
                         </p>
+                    </div>
+                    <div className="description">
+                        <h2>Check it out here: </h2>
+                        <a href="https://github.com/mariogerardi/cheese-app-frontend" target="_blank">
+                            <img className="contactLink" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" alt="" />
+                        </a>&emsp;
+                        <a href="https://cheese-collection-app.netlify.app/" target="_blank">
+                            <img className="contactLink" src="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/netlify-512.png" alt="" />
+                        </a>
                     </div>
                 </div>
             </div>
