@@ -19,7 +19,7 @@ function Contact() {
                             <h5>GitHub</h5><img className="contactLink" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" />
                         </a>
                         <a className="contactLinkBox" href="https://www.linkedin.com/in/mario-gerardi/" target="_blank">
-                            <h5>GitHub</h5><img className="contactLink" src="https://cdn1.iconfinder.com/data/icons/capsocial/500/linkedin2-256.png" />
+                            <h5>LinkedIn</h5><img className="contactLink" src="https://cdn1.iconfinder.com/data/icons/capsocial/500/linkedin2-256.png" />
                         </a>
                     </div>
                 </div>

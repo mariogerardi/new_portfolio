@@ -42,7 +42,6 @@ function Header() {
             setToggle1(0);
             setCount(count-1)
         }
-        counter();
     }
 
     function doTheWave() {
@@ -55,7 +54,6 @@ function Header() {
             setToggle2(0);
             setCount(count-1)
         }
-        counter();
     }
 
     function moveIt() {
@@ -68,7 +66,6 @@ function Header() {
             setToggle3(0);
             setCount(count-1)
         }
-        counter();
     }
 
     function timeToStretch() {
@@ -81,7 +78,6 @@ function Header() {
             setToggle4(0);
             setCount(count-1)
         }
-        counter();
     }
 
     function doAFlip() {
@@ -94,7 +90,6 @@ function Header() {
             setToggle5(0);
             setCount(count-1)
         }
-        counter();
     }
 
     function bouncyBois() {
@@ -107,7 +102,6 @@ function Header() {
             setToggle6(0);
             setCount(count-1)
         }
-        counter();
     }
 
     function spiralLikeMe() {
@@ -120,7 +114,6 @@ function Header() {
             setToggle7(0);
             setCount(count-1)
         }
-        counter();
     }
 
     function shiftInRhythm() {
@@ -135,7 +128,6 @@ function Header() {
             setToggle8(0);
             setCount(count-1)
         }
-        counter();
     }
 
     function reverseReverse() {
@@ -148,7 +140,6 @@ function Header() {
             setToggle9(0);
             setCount(count-1)
         }
-        counter();
     }
 
     function hireMeIDareYou() {
@@ -161,7 +152,6 @@ function Header() {
             setToggle10(0);
             setCount(count-1)
         }
-        counter();
     }
 
     function flipButCooler() {
@@ -174,7 +164,6 @@ function Header() {
             setToggle11(0);
             setCount(count-1)
         }
-        counter();
     }
 
     function grandFinale() {
@@ -248,7 +237,6 @@ function Header() {
                     toggle={toggle4}
                     onClick={timeToStretch}
                     down={down}
-                    mirror={mirror}
                 >
                     <h1 bounce={bounce}>i</h1>
                 </button>
@@ -262,6 +250,7 @@ function Header() {
                 </button>
                 <button 
                     className="letter"
+                    id="click"
                     toggle={toggle6}
                     onClick={bouncyBois}
                     flip={flip}
@@ -296,7 +285,6 @@ function Header() {
                     className="letter"
                     toggle={toggle10}
                     up={up}
-                    mirror={mirror}
                     onClick={hireMeIDareYou}
                 >
                     <h1 superflip={superflip}>r</h1>
@@ -314,10 +302,12 @@ function Header() {
                     id="end"
                     toggle={toggle12}
                     onClick={grandFinale}
+                    mirror={mirror}
                 >
                     <h1 bounce={bounce}>i</h1>
                 </button>
             </div>
+            <img className="youShouldClickThis" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/699458-icon-27-one-finger-click-512.png" spiral={spiral}/>
             <h2 className="migrate" migrate={migrate}><em>Front-End Developer | Filmmaker</em></h2>
             <h3 className="stretch" stretch={stretch}>Nice to meet you.</h3>
             <a className="resume" href={pdf} target="_blank" resume={resume} finale={finale}>Résumé</a>
