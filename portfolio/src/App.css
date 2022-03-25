@@ -43,6 +43,13 @@ h5 {
   justify-content: center;
 }
 
+.header[finale='1'] {
+  animation-name: finale;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+};
+
 .profile {
   width: 100vw;
   height: 45vh;
@@ -130,13 +137,6 @@ h1[superflip='1'] {
   animation-timing-function: ease-in-out;
 }
 
-h1[finale='1'] {
-  animation-name: finale;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-};
-
 .letter[up='1'] {
   animation-name: up;
   animation-duration: 3s;
@@ -157,13 +157,6 @@ h1[finale='1'] {
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
 }
-
-.letter[finale='1'] {
-  animation-name: finale;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-};
 
 #start {
   border-top-left-radius: 1vh;
@@ -211,7 +204,6 @@ h1[finale='1'] {
   animation-timing-function: ease-in-out;
   transform-origin: bottom left;
 }
-
 
 .letter[flip='1'] {
   animation-name: flip;
@@ -425,7 +417,9 @@ h1[finale='1'] {
 }
 
 @keyframes finale {
-  0% {opacity: 1;}
-  50% {opacity: 0;}
-  100% {opacity: 1;}
+  0%, 100% {  background: linear-gradient(to bottom, red, transparent);}
+  20% {  background: linear-gradient(to bottom, orange, transparent);}
+  40% {  background: linear-gradient(to bottom, green, transparent);}
+  60% {  background: linear-gradient(to bottom, blue, transparent);}
+  80% {  background: linear-gradient(to bottom, purple, transparent);}
 }

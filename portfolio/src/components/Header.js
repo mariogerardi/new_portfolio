@@ -211,7 +211,7 @@ function Header() {
     }
 
     return (
-        <div className="header">
+        <div className="header" finale={finale}>
             <div className="profile">
                 {counter()}
             </div>
@@ -314,7 +314,6 @@ function Header() {
                     id="end"
                     toggle={toggle12}
                     onClick={grandFinale}
-                    finale={finale}
                 >
                     <h1 bounce={bounce}>i</h1>
                 </button>
