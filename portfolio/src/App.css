@@ -43,7 +43,7 @@ h5 {
   justify-content: center;
 }
 
-.header[finale='1'] {
+.header[count='12'] {
   animation-name: finale;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -63,6 +63,7 @@ h5 {
   width: 45vh;
   height: 45vh;
   border-radius: 50%;
+  margin-top: 3vh;
 }
 
 .portrait[spin='1'] {
@@ -193,7 +194,7 @@ h1[superflip='1'] {
   z-index: 5;
 }
 
-.resume[count='12'] {
+.resume[finale='1'] {
   background-color: #FFB107;
 }
 
@@ -336,6 +337,22 @@ h1[superflip='1'] {
   width: 8vh;
 }
 
+.footer {
+  height: 12vh;
+  background-color: #060c0f;
+  margin-top: 24vh;
+  border-top: #333;
+  border-top-width: 2px;
+  border-top-style: groove;
+}
+
+.resumeBox {
+  height: 7.5vh;
+  border-radius: 1.25;
+  border-style: dashed;
+  border: #aaa;
+}
+
 @keyframes spin {
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
@@ -417,9 +434,9 @@ h1[superflip='1'] {
 }
 
 @keyframes finale {
-  0%, 100% {  background: linear-gradient(to bottom, red, transparent);}
-  20% {  background: linear-gradient(to bottom, orange, transparent);}
-  40% {  background: linear-gradient(to bottom, green, transparent);}
-  60% {  background: linear-gradient(to bottom, blue, transparent);}
-  80% {  background: linear-gradient(to bottom, purple, transparent);}
+  0%, 100% {  background: linear-gradient(to bottom, crimson, transparent);}
+  20% {  background: linear-gradient(to bottom, #FFB107, transparent);}
+  40% {  background: linear-gradient(to bottom, forestgreen, transparent);}
+  60% {  background: linear-gradient(to bottom, #1949E9, transparent);}
+  80% {  background: linear-gradient(to bottom, rebeccapurple, transparent);}
 }

@@ -191,7 +191,7 @@ function Header() {
     }
 
     function counter() {
-        if (count <= 11) {
+        if (finale !== 1) {
             return (
                 <img 
                     className="portrait"
@@ -211,7 +211,7 @@ function Header() {
     }
 
     return (
-        <div className="header" finale={finale}>
+        <div className="header" finale={finale} count={count}>
             <div className="profile">
                 {counter()}
             </div>
@@ -320,7 +320,7 @@ function Header() {
             </div>
             <h2 className="migrate" migrate={migrate}><em>Front-End Developer | Filmmaker</em></h2>
             <h3 className="stretch" stretch={stretch}>Nice to meet you.</h3>
-            <a className="resume" href={pdf} target="_blank" resume={resume} count={count}>Résumé</a>
+            <a className="resume" href={pdf} target="_blank" resume={resume} finale={finale}>Résumé</a>
         </div>
     );
 }
