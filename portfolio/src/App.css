@@ -424,7 +424,7 @@ h1[superflip='1'] {
   right: 2vh;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 475px) {
   [class=letter] {
     padding-left: .35vh;
     padding-right: .35vh;
