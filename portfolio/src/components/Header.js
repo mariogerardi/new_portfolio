@@ -206,7 +206,8 @@ function Header() {
             </div>
             <div 
                 className="titleContainer" 
-                wave={wave}>
+                wave={wave}
+                id="shrink">
                 <button 
                     className="letter" 
                     id="start" 
